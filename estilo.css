@@ -1,0 +1,64 @@
+
+::selection{
+   background:rgba(255,51,102,.5);
+}
+body{
+   background:url("fondo.jpg");
+   background-size: 300px;
+overflow:hidden;
+}
+#latido{
+   animation:5s latido infinite;
+   color:white;
+   font-family: 'Allura', cursive;
+   font-size:40px;
+   margin:0 auto;
+   text-align:center;
+   width:500px;
+}
+@keyframes latido{
+   0%{transform:scale(1)}
+   47%{transform:scale(1)}
+   48%{transform:scale(.9)}
+   50%{transform:scale(1.1)}
+   52%{transform:scale(.9)}
+   54%{transform:scale(1)}
+}
+#latido img{
+   width:800px;   
+}
+#latido h1{
+   position:absolute;
+   left:10%;
+   line-height:80px;
+   top:10%;
+   width:700px;
+ 
+}
+input:focus{
+  background:white;
+  border-spacing:10px;
+}
+.rotacion{
+  animation:5s rotacion;
+  transform-origin:left;
+}
+.noejp{
+   color:red;
+   display:none;
+  margin-left:30px;
+   font-size:100px
+  text-align:center;
+}
+@keyframes rotacion{
+  100%{transform:rotate(360deg)}
+}
+input{
+background:rgba(255,255,255,.7);
+border:none;
+display:block;
+height:30px;
+padding:0 auto;
+margin:0 auto;
+width:250px;
+}
